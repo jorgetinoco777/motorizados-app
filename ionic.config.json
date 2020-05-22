@@ -1,0 +1,7 @@
+{
+  "name": "motorizados-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
