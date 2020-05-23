@@ -1,0 +1,97 @@
+
+<ion-header  class="ion-no-border"  >
+  <ion-toolbar>
+    <ion-buttons slot="start"  >
+      <ion-button (click)="toggleMenu()" mode="ios">
+          <ion-icon name="chevron-back-sharp"></ion-icon>
+          
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" > 
+      <ion-img  class="logo"  [src]="logo"></ion-img>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content  >
+ 
+   
+          <div class="background-header">
+
+            <ion-avatar>
+                <ion-img src="assets/Logos/default_avatar.png"></ion-img>
+            </ion-avatar>
+        </div>
+                          
+        <div class="semi-circulo-1">
+            <p  class="name">Pepito Perez</p>
+            <p>0995669394</p>
+        </div>
+
+
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-item lines="none"> 
+              <ion-icon name="location-sharp" slot="start"></ion-icon>
+
+              <ion-label>
+                 <h3>Partida</h3>
+                </ion-label>
+            </ion-item>
+            <p>Eduardo Solorzano 272-416</p>
+
+          </ion-col>
+          <ion-col size="6">
+            <ion-item lines="none" >
+              <ion-icon name="flag-sharp" slot="start"></ion-icon>
+              <ion-label>
+                <h3>Destino</h3>
+              </ion-label>
+            </ion-item>
+            <p>Centro Comercial Iñaquito (CCI)</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <br>
+
+      <ion-list>
+        <ion-item>
+          <ion-label> Detalle</ion-label>
+          <ion-badge color="light" slot="end"> $2.00 </ion-badge>
+        </ion-item>    
+        
+        <ion-item>
+          <ion-label> Detalle</ion-label>
+          <ion-badge color="light" slot="end"> $2.00 </ion-badge>
+        </ion-item>            
+      
+
+
+         <ion-item  >
+            <ion-label position="floating"> <ion-icon name="chatbox-ellipses-outline"></ion-icon> Observaciones</ion-label>
+            <ion-textarea  name="message" 
+                          placeholder="Escribe tu observacion" 
+                          required></ion-textarea>      
+
+        </ion-item>
+      </ion-list>
+
+
+      <br>
+      <ion-button   type="submit"
+      class="auth-button"
+      shape="round" 
+      expand="block" 
+      color="primary"
+      >Entregar</ion-button>
+
+      <div class="huevo"></div>
+
+</ion-content>

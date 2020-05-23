@@ -1,0 +1,48 @@
+
+<ion-header  class="ion-no-border"  >
+  <ion-toolbar>
+    <ion-buttons slot="start"  >
+      <ion-button (click)="toggleMenu()" mode="ios">
+          <ion-icon name="chevron-back-sharp"></ion-icon>
+          
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" > 
+      <ion-img  [src]="logo"  class="logo"></ion-img>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider >
+    <ion-label> 
+      <h3> Notificaciones </h3>
+    </ion-label>
+</ion-item-divider>
+
+
+  <ion-list> 
+    <ion-item lines="none">
+        <ion-label>Push Notificaciones </ion-label>
+        <ion-toggle slot="end"   
+                    [(ngModel)]="push_notifications" 
+                    name="notifications" 
+                    value="push_notifications"
+                    (ionChange) ="ionChange( $event )"></ion-toggle>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label>Correo Eléctronico</ion-label>
+        <ion-toggle slot="end"  
+                    [(ngModel)]="mailing" 
+                    name="notifications" 
+                    value="mailing"
+                    (ionChange) ="ionChange( $event )"></ion-toggle>
+      </ion-item>
+  </ion-list>
+  
+ 
+  
+  <div class="huevo"></div>
+</ion-content>

@@ -1,0 +1,166 @@
+<ion-content  >
+  <div  class="background">
+
+      <div class="background-header">
+        <ion-img src="./assets/Pantallas/login_maps2.jpg" class="dom-center"  ></ion-img>          
+      </div>
+
+      <!-- circulos -->
+      <div class="oval-half-red_1"></div>
+      <div class="oval-half-red_2"></div>
+
+
+
+      <form #f="ngForm" (ngSubmit)="onLogin( f )">
+
+
+              <ion-card>
+
+                <ion-card-header >
+           
+                            <ion-avatar>
+                              <ion-img src="assets/Logos/default_avatar.png"></ion-img>
+                            </ion-avatar>
+
+
+                            <ion-segment (ionChange)="segmentChanged($event)" color="tertiary" class="animated fadeIn fast">
+                              <ion-segment-button value="person-information">
+                                <ion-icon name="person"></ion-icon>
+                              </ion-segment-button>
+                              <ion-segment-button value="auth-information">
+                                <ion-icon name="key-sharp"></ion-icon>
+                              </ion-segment-button>
+                              <ion-segment-button value="car-information">
+                                <ion-icon name="car"></ion-icon>
+                              </ion-segment-button>
+                          </ion-segment>
+
+                  
+                </ion-card-header>
+
+                <ion-card-content>
+
+                            <div *ngIf="segmento === 'person-information'">
+                              <ion-list>
+
+                                    <ion-item >
+                                        <ion-label position="floating"> <ion-icon name="person-outline"></ion-icon> Mi nombre es </ion-label>
+                                        <ion-input  type="text" 
+                                                    name="email"
+                                                    placeholder="Nombre y Apellido"
+                                                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                                                    required
+                                                    clear-input="true" 
+                                                    maxlength="120">
+                                        </ion-input>
+                                    </ion-item>
+
+                                    <ion-item >
+                                      <ion-label position="floating"> <ion-icon name="finger-print-sharp"></ion-icon> Mi número de cédula es</ion-label>
+                                      <ion-input  type="tel" 
+                                                  name="email"
+                                                  placeholder="0605676985"
+                                                  required
+                                                  clear-input="true" 
+                                                  maxlength="10"
+                                                  minlength="10">
+                                      </ion-input>
+                                    </ion-item>
+
+                                  
+                                    <ion-item>
+                                      <ion-label position="floating"> <ion-icon name="location-sharp"></ion-icon>Mi Ciudad</ion-label>
+                                      <ion-select value="01">
+                                        <ion-select-option value="01">Esmeraldas</ion-select-option> 
+                                      </ion-select>
+                                    </ion-item>
+
+                              </ion-list>
+                            </div>
+
+
+
+                            <div *ngIf="segmento === 'auth-information'">
+                              <ion-list>
+                                   
+                                    <ion-item >
+                                      <ion-label position="floating"> <ion-icon name="mail-outline"></ion-icon> Correo Electrónico</ion-label>
+                                      <ion-input  type="email" 
+                                                  name="email"
+                                                  placeholder="usuario@email.com"
+                                                  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                                                  required
+                                                  clear-input="true" 
+                                                  maxlength="120">
+                                      </ion-input>
+                                  </ion-item>
+
+                                        
+                                    <ion-item >              
+                                        <ion-label position="floating"> <ion-icon name="key-outline"></ion-icon> Contraseña</ion-label>
+                                        <ion-input  type="password" 
+                                                    name="password"
+                                                    placeholder="••••••"
+                                                    required
+                                                    maxlength="12"
+                                                    minlength="6">
+                                        </ion-input>
+                                    </ion-item>
+                              </ion-list>
+                            </div>
+
+
+
+                            <div *ngIf="segmento === 'car-information'">
+                              <ion-list>
+
+          
+                                    <ion-item >
+                                      <ion-label position="floating"> <ion-icon name="car-outline"></ion-icon> La placa de mi vehículo</ion-label>
+                                      <ion-input  type="name" 
+                                                  name="email"
+                                                  placeholder="HBZ-1234"
+                                                  required
+                                                  clear-input="true" 
+                                                  minlength="7"
+                                                  maxlength="8">
+                                      </ion-input>
+                                    </ion-item>
+
+                                       
+                                    <ion-item>
+                                      <ion-label position="floating"> <ion-icon name="bicycle-sharp"></ion-icon> Tipo de vehículo</ion-label>
+                                      <ion-select value="02">
+                                          <ion-select-option value="01">Carro</ion-select-option> 
+                                          <ion-select-option value="02">Moto</ion-select-option>                  
+                                          <ion-select-option value="03">Bicicleta</ion-select-option> 
+                                      </ion-select>
+                                    </ion-item>
+ 
+                              </ion-list>
+
+                            </div>
+
+                  </ion-card-content>      
+
+              </ion-card>     
+                    
+
+
+              <ion-button   type="submit"
+                            class="auth-button"
+                            shape="round" 
+                            expand="block" 
+                            color="primary"
+                            >Crear Cuenca</ion-button>
+
+
+         
+
+    </form>
+    
+    <ion-label (click)="goToLogin()">
+      <p> Ya tengo cuenta, <u>Iniciar Sesión</u>  </p>
+    </ion-label>
+</div>  
+</ion-content>

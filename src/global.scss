@@ -24,3 +24,200 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.rojo span, .rojo .action-sheet-icon{
+  color:var(--ion-color-danger, #eb445a)!important;
+}
+
+
+
+::-webkit-scrollbar{ display:none!important; } 
+
+:root {
+    --ion-safe-area-top: 5px;
+    --ion-safe-area-bottom: 20px;
+    // categorias
+
+ }
+ .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  .animated.fast {
+    -webkit-animation-duration: 400ms;
+    animation-duration: 400ms;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+.text-primary{
+    color: var(--ion-color-primary)!important;
+} 
+
+.text-secondary{
+  color: var(--ion-color-secondary)!important;
+} 
+.text-tertiary {
+    color: var(--ion-color-tertiary)!important;
+}
+.text-medium {
+    color: var(--ion-color-medium)!important;
+}
+.text-diners {
+    color: #20BCAE!important;
+}
+.text-danger{
+    color: var(--ion-color-danger)!important;
+} 
+.text-dark{
+    color: var(--ion-color-dark)!important;
+} 
+
+.text-medium{
+    color: var(--ion-color-medium)!important;
+} 
+
+.text-center{ 
+    text-align: center; 
+}
+.text-right{ 
+    text-align: right; 
+}
+
+.text-justify{ 
+    text-align:justify; 
+}
+
+.text-errors{
+    color: var(--ion-color-danger);
+    margin-left: 20px;
+    margin-bottom: -5px;
+    font-size: 13px;
+}
+
+.text-label{
+  color: var(--ion-color-dark);
+  margin-left: 20px;
+  margin-bottom: -5px;
+  font-size: 13px;
+}
+
+
+.text-success{
+  // color: var(--ion-color-primary);
+  margin-left: 20px;
+  margin-bottom: -5px;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*******   app  *********/
+
+ .logo {
+  margin-left: 75%; 
+  width: 20%;
+}
+
+//  estilos auth 
+
+.background {
+  background: #4C5966;
+  height: 100%;
+  width: 100%;
+}
+
+.background-header{
+  background: #f38120;
+}
+
+.oval-half-red_1 {
+  width: 170px;
+  height: 125px;
+  -moz-border-radius: 0 50% / 0 100%;
+  -webkit-border-radius: 0 50% / 0 100%;
+  border-radius: 0 50% / 0 100%;
+  background: #4c5a65;
+  position:  absolute;
+  margin-top: -65px;
+  margin-left: -50px;
+ }
+ 
+.oval-half-red_2 {
+  width: 135px;
+  height: 45px;
+  -moz-border-radius: 0 50% / 0 100%;
+  -webkit-border-radius: 0 50% / 0 100%;
+  border-radius: 0 50% / 0 100%;
+  background: #f38120;
+  position:  absolute;
+  margin-top: -5px;
+  margin-left: 78%;
+ }
+
+ .auth-button{
+  margin-top: 10px;
+  height: 45px;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+
+
+//  fin auth 
+
+
+
+
+// estilos profile 
+
+.huevo {
+  width: 140px;
+  height: 180px;
+  background-color: #4C5966;
+  border-radius: 50% 84% 5% 59%/60% 60% 40% 40%;
+  position: absolute;
+  margin-top: -10%;
+  margin-left: 65%;
+}
+// fin  profile
+ 
+
+
+// elementos dom ionic 
+ion-select-popover,ion-select, ion-select-option, ion-menu-button, ion-menu, ion-menu-toggle, ion-action-sheet, ion-fab-button, ion-fab, ion-fab-list, ion-refresher-content, ion-refresher, ion-back-button, ion-backdrop, ion-alert, ion-loading, ion-toast, ion-card, ion-card-content, ion-card-header, ion-card-subtitle, ion-card-title, ion-item-option, ion-item-options, ion-item-sliding, ion-infinite-scroll-content, ion-infinite-scroll, ion-reorder, ion-reorder-group, ion-segment-button, ion-segment,
+ion-tab-bar, ion-chip, ion-modal, ion-popover, ion-searchbar, ion-app, ion-buttons, ion-content, ion-footer, ion-header, ion-router-outlet, ion-title, ion-toolbar, ion-route, ion-route-redirect, ion-router, ion-router-link, ion-avatar, ion-badge, ion-thumbnail, ion-col, ion-grid, ion-row, ion-nav, ion-nav-link, ion-slide, ion-slides, ion-checkbox, ion-img, ion-input, ion-progress-bar, ion-range, ion-split-pane, ion-text, ion-textarea, ion-toggle, ion-virtual-scroll, ion-picker, ion-datetime, ion-picker-column, ion-radio, ion-radio-group, ion-spinner, ion-ripple-effect, ion-button, ion-icon, ion-item-divider, ion-item-group, ion-note, ion-skeleton-text, ion-item, ion-label, ion-list, ion-list-header{
+   font-family: 'Lato' ;
+
+}

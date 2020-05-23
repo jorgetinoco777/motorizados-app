@@ -1,0 +1,49 @@
+<ion-header  class="ion-no-border"  >
+  <ion-toolbar>
+    <ion-buttons slot="start"  >
+      <ion-button (click)="toggleMenu()" mode="ios">
+          <ion-icon name="chevron-back-sharp"></ion-icon>
+          
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" > 
+      <ion-img  [src]="logo"  class="logo"></ion-img>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+<ion-content>
+
+
+  <ion-item-divider >
+    <ion-label style="width: 100%;"> 
+      <p style="text-align: center;"> Mis Entregas </p>
+    </ion-label>
+</ion-item-divider>
+
+<!-- Default Searchbar -->
+<ion-searchbar></ion-searchbar>
+ 
+
+
+
+  <ion-list>
+    <ion-item lines="none" *ngFor="let i of [1,2,3,4]" >
+      <ion-avatar slot="start">
+        <ion-img src="assets/Logos/default_avatar.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Jeison Caguana</h2>
+        <p> 3:40pm | 22/05/2020</p>
+      </ion-label>
+      <ion-badge color="light" slot="end"> $2.00 </ion-badge>
+    </ion-item>
+</ion-list>
+
+
+  <div class="huevo"></div>
+</ion-content>
