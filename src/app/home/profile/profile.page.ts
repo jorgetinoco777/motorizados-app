@@ -11,6 +11,7 @@ import { MyDeliverysPage } from '../my-deliverys/my-deliverys.page';
 import { PreferencesPage } from '../preferences/preferences.page';
 import { TermsAndConditionPage } from '../terms-and-condition/terms-and-condition.page';
 import { DetailDelirevyPage } from '../detail-delirevy/detail-delirevy.page';
+import { app } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-profile',
@@ -18,8 +19,8 @@ import { DetailDelirevyPage } from '../detail-delirevy/detail-delirevy.page';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-
-  name = 'Nombre Apellido';
+  logo:string   = app.icono.nivel_2;  
+  name = 'Jeison Caguana';
 
   constructor( private _auth: AuthService,
                private router: Router,

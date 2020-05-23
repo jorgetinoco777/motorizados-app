@@ -4,3 +4,19 @@
     background: #cccccc;
 }
  
+.nav-info-page{
+    background: var(--ion-color-secondary);
+    color: #ffffff;
+    bottom: 0;
+    width: 97%;
+    height: 55px;
+    border-radius: 35px;
+    margin-left: 35px;
+
+
+    ion-chip{
+        margin-top: 14px;
+        margin-left: 15px;
+        width: 70%;
+    }
+}

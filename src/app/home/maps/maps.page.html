@@ -3,13 +3,34 @@
 
 
 
-  <!-- menu  -->
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button  (click)="modalProfile()">
-          <ion-icon name="menu-sharp"></ion-icon> 
-        </ion-fab-button>
-</ion-fab>
+  <div class="nav-info-page" vertical="bottom" horizontal="end" slot="fixed">
+ 
 
+
+    <ion-chip>
+      <ion-avatar>
+        <ion-img src="./assets/Logos/default_avatar.png"></ion-img>
+      </ion-avatar>
+      <ion-label color="light">Jeison Caguana</ion-label>
+    </ion-chip>
+
+
+    
+    <ion-button  (click)="modalProfile()" color="secondary" shape="round">     
+      <ion-icon name="menu-sharp" slot="icon-only" color="primary"></ion-icon> 
+    </ion-button>
+
+
+    
+
+
+
+
+  </div>
+
+
+
+ 
 </ion-content>
 
 

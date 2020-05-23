@@ -78,18 +78,82 @@ export class MapsPage implements OnInit {
          zoom: 15,
          disableDefaultUI: true, 
          scrollWheel:false,
-         draggable:true,     
-         styles:  styles_google
+         draggable:true,   
+          styles : [
+            {
+              "elementType": "labels.icon",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#4c5966"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.icon",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "geometry.fill",
+              "stylers": [
+                {
+                  "color": "#e4e7e7"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            }
+          ]
      });
  
 
-     console.log( cordenadas  )
-    return
+   
      const marker:any[] = [];
  
 
      google.maps.event.addListenerOnce(mapaDOM , 'idle', () => {
-        marker[0] =  new google.maps.Marker({ position: { lat: 0.969178, lng: -79.652708  }, map: mapaDOM,  draggable: false });
+        marker[0] =  new google.maps.Marker({ 
+          position: { lat: 0.969178, lng: -79.652708  }, 
+          map: mapaDOM,  
+          draggable: true,          
+          icon :"./assets/Logos/delivery.png",  
+      });
  
         marker[0].addListener('click', async () => {
          
